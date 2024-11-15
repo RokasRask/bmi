@@ -14,9 +14,11 @@
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2196078431));
 }
 .bmiCalcContainer {
-  background-color: #f4f3ff;
+  background-image: url(https://img.freepik.com/free-vector/purple-fluid-background_53876-99561.jpg?t=st=1731667417~exp=1731671017~hmac=3acb65541f74246f59d7f33d7195c4b0f745194e970bab92000eeb17af541c53&w=826);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: 550px;
-  height: 400px;
+  height: 450px;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -25,10 +27,11 @@
 }
 .bmiCalcContainer h1 {
   font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
-  color: #081854;
+  font-size: 1.4rem;
+  color: #6c63ff;
   font-weight: 500;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 hr {
   width: 90%;
@@ -38,6 +41,7 @@ hr {
   flex-direction: row;
   gap: 40px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .height {
   display: flex;
@@ -45,9 +49,19 @@ hr {
   align-items: center;
   text-align: center;
   border: 1px solid #fff;
-  height: 150px;
+  height: 160px;
   border-radius: 20px;
   background-color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .weight {
   display: flex;
@@ -55,9 +69,19 @@ hr {
   align-items: center;
   text-align: center;
   border: 1px solid #fff;
-  height: 150px;
+  height: 160px;
   border-radius: 20px;
   background-color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 input {
   border: none;
@@ -69,7 +93,12 @@ input {
   font-weight: 700;
   margin-top: 20px;
   margin-left: 10px;
-  cursor: text;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
 }
 .bmiCalcContainer span {
   color: #000;

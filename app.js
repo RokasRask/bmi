@@ -5,11 +5,9 @@ const buttonCalculate = document.querySelector(".calculate");
 const div = document.querySelector(".bmiCalcContainer");
 const info = document.querySelector(".info");
 
-// test
-
 buttonCalculate.addEventListener("click", () => {
-    const heightValue = parseFloat(heightInput.value);
-    const weightValue = parseFloat(weightInput.value);
+    const heightValue = parseInt(heightInput.value);
+    const weightValue = parseInt(weightInput.value);
 
     removeResetBtn();
 
