@@ -13,15 +13,19 @@ buttonCalculate.addEventListener("click", () => {
 
     if (!heightInput.value && !weightInput.value) {
         info.textContent = "Enter height and weight";
+        info.style.color = "black";
         return;
     } else if (!heightInput.value) {
         info.textContent = "Enter height";
+        info.style.color = "black";
         return;
     } else if (!weightInput.value) {
         info.textContent = "Enter weight";
+        info.style.color = "black";
         return;
     } else if (heightValue <= 0 || weightValue <= 0) {
         info.textContent = "Please enter correct values";
+        info.style.color = "black";
         return;
     }
 
